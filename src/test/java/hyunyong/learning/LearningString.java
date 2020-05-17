@@ -123,4 +123,18 @@ public class LearningString {
         boolean check = str.contains("Test");
         return check;
     }
+
+    @Test
+    void replaceTest() {
+        String str = "kem hyun yong";
+
+        String replacestr = replaceEx(str);
+
+        Assertions.assertEquals(replacestr, "kim hyun yong");
+    }
+
+    private String replaceEx(String str) {
+        String check = str.replace("e", "i");
+        return check;
+    }
 }
