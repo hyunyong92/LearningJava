@@ -137,4 +137,19 @@ public class LearningString {
         String check = str.replace("e", "i");
         return check;
     }
+
+    @Test
+    void charAtTest() {
+        String str = "ABCDE";
+
+        char charAtstr = charAtEx(str);
+
+        Assertions.assertEquals(charAtstr,'A');
+    }
+
+    private char charAtEx(String str) {
+        char check = str.charAt(0);
+
+        return check;
+    }
 }
