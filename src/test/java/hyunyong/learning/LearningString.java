@@ -76,4 +76,21 @@ public class LearningString {
         }
         return prefix;
     }
+
+    @Test
+    void testReverse() {
+        String str = "Hello";
+
+        String reverseStr = reverse(str);
+
+        Assertions.assertEquals(reverseStr, "olleH");
+    }
+
+    private String reverse(String str) {
+        String restr = "";
+        for (int i = str.length() - 1; i >= 0 ; i--) {
+            restr = restr + str.charAt(i);
+        }
+        return restr;
+    }
 }
