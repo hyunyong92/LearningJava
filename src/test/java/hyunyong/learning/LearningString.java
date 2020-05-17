@@ -29,4 +29,29 @@ public class LearningString {
         return true;
     }
 
+    @Test
+    void testCompletion() {
+        String[] participant = new String[] {"gunju", "hyunyong", "0hun"};
+        String[] completion = new String[] {"gunju", "hyunyong"};
+
+        String failRunner = checkCompletion(participant, completion);
+
+        Assertions.assertEquals(failRunner, "0hun");
+    }
+
+    private String checkCompletion(String[] participant, String[] completion) {
+        for (int i = 0; i < participant.length; i++) {
+            boolean success = false;
+            for (int j = 0; j < completion.length; j++) {
+                if (participant[i].equals(completion[j])) {
+                    success = true;
+                    break;
+                }
+            }
+            if (!success) {
+                return participant[i];
+            }
+        }
+        return null;
+    }
 }
