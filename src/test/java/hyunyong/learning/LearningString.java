@@ -54,4 +54,26 @@ public class LearningString {
         }
         return null;
     }
+
+    @Test
+    void testFindPrefix() {
+        String a = "flower";
+        String b = "floor";
+
+        String prefix = prefix(a, b);
+
+        Assertions.assertEquals(prefix, "flo");
+    }
+
+    private String prefix(String str1, String str2) {
+        String prefix = "";
+        for (int i = 0; i < str1.length(); i++) {
+            if (str1.charAt(i) == str2.charAt(i)) {
+                prefix = prefix + str1.charAt(i);
+            } else {
+                break;
+            }
+        }
+        return prefix;
+    }
 }
