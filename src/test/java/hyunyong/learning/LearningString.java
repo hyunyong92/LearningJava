@@ -93,4 +93,20 @@ public class LearningString {
         }
         return restr;
     }
+
+    @Test
+    void substringTest() {
+        String str = "Helloworld";
+
+        String substr = subTest(str);
+
+        Assertions.assertEquals(substr,"Hello");
+    }
+
+    private String subTest(String str) {
+//        String str1 = str.substring(5);
+       String str1 = str.substring(0,5);
+        return str1;
+        
+    }
 }
