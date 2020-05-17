@@ -109,4 +109,18 @@ public class LearningString {
         return str1;
         
     }
+
+    @Test
+    void containTest() {
+        String str = "containTest";
+
+        boolean containstr = contains(str);
+
+        Assertions.assertEquals(containstr,true);
+    }
+
+    private boolean contains(String str) {
+        boolean check = str.contains("Test");
+        return check;
+    }
 }
