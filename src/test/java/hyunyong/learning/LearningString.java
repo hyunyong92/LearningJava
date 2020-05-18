@@ -152,4 +152,22 @@ public class LearningString {
 
         return check;
     }
+
+    @Test
+    void EqualsTest() {
+        String str1 = "hello";
+
+
+        boolean equalsstr = equalsEx(str1);
+
+        Assertions.assertEquals(equalsstr, true);
+    }
+
+    private boolean equalsEx(String str1) {
+        boolean check = false;
+        if (str1.equals("hello")){
+            check = true;
+        }
+        return check;
+    }
 }
