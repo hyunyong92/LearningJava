@@ -31,8 +31,8 @@ public class LearningString {
 
     @Test
     void testCompletion() {
-        String[] participant = new String[] {"gunju", "hyunyong", "0hun"};
-        String[] completion = new String[] {"gunju", "hyunyong"};
+        String[] participant = new String[]{"gunju", "hyunyong", "0hun"};
+        String[] completion = new String[]{"gunju", "hyunyong"};
 
         String failRunner = checkCompletion(participant, completion);
 
@@ -88,7 +88,7 @@ public class LearningString {
 
     private String reverse(String str) {
         String restr = "";
-        for (int i = str.length() - 1; i >= 0 ; i--) {
+        for (int i = str.length() - 1; i >= 0; i--) {
             restr = restr + str.charAt(i);
         }
         return restr;
@@ -100,14 +100,14 @@ public class LearningString {
 
         String substr = subTest(str);
 
-        Assertions.assertEquals(substr,"Hello");
+        Assertions.assertEquals(substr, "Hello");
     }
 
     private String subTest(String str) {
 //        String str1 = str.substring(5);
-       String str1 = str.substring(0,5);
+        String str1 = str.substring(0, 5);
         return str1;
-        
+
     }
 
     @Test
@@ -116,7 +116,7 @@ public class LearningString {
 
         boolean containstr = contains(str);
 
-        Assertions.assertEquals(containstr,true);
+        Assertions.assertEquals(containstr, true);
     }
 
     private boolean contains(String str) {
@@ -144,7 +144,7 @@ public class LearningString {
 
         char charAtstr = charAtEx(str);
 
-        Assertions.assertEquals(charAtstr,'A');
+        Assertions.assertEquals(charAtstr, 'A');
     }
 
     private char charAtEx(String str) {
@@ -165,9 +165,36 @@ public class LearningString {
 
     private boolean equalsEx(String str1) {
         boolean check = false;
-        if (str1.equals("hello")){
+        if (str1.equals("hello")) {
             check = true;
         }
         return check;
+    }
+
+    @Test
+    void LastwordTest() {
+        String str = "hello java world";
+        String[] str1 = str.split(" ");
+        int lastWord = lastWord(str1);
+
+        Assertions.assertEquals(lastWord, 5);
+
+    }
+
+    private int lastWord(String[] str1) {
+        int answer = 0;
+
+        for (int i = 0; i < str1.length; i++) {
+            answer = 0;
+
+            if (i == str1.length-1) {
+
+                answer = answer + str1[i].length();
+                return answer;
+            }
+
+
+        }
+       return answer;
     }
 }
