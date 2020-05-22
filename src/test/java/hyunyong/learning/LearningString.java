@@ -173,28 +173,21 @@ public class LearningString {
 
     @Test
     void LastwordTest() {
-        String str = "hello java world";
-        String[] str1 = str.split(" ");
-        int lastWord = lastWord(str1);
+        String str = "hello java world!!!";
 
-        Assertions.assertEquals(lastWord, 5);
+        int lastWord = lastWord(str);
+
+        Assertions.assertEquals(lastWord, 8);
 
     }
 
-    private int lastWord(String[] str1) {
-        int answer = 0;
-
-        for (int i = 0; i < str1.length; i++) {
-            answer = 0;
-
-            if (i == str1.length-1) {
-
-                answer = answer + str1[i].length();
-                return answer;
-            }
+    private int lastWord(String str) {
 
 
-        }
-       return answer;
+        String[] str1 = str.split(" ");
+
+        int answer = str1[str1.length-1].length();
+
+        return answer;
     }
 }
