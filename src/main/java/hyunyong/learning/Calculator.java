@@ -11,12 +11,12 @@ public class Calculator {
     }
 
     public int add() {
-        // TODO: 두 수의 합을 리턴
-        return 0;
+
+        return operand1 + operand2;
     }
 
     public int minus() {
-        // TODO: 두 수의 차를 리턴
-        return 0;
+
+        return operand1 - operand2;
     }
 }
