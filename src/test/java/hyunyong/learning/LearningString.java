@@ -157,7 +157,6 @@ public class LearningString {
     void EqualsTest() {
         String str1 = "hello";
 
-
         boolean equalsstr = equalsEx(str1);
 
         Assertions.assertEquals(equalsstr, true);
@@ -183,10 +182,9 @@ public class LearningString {
 
     private int lastWord(String str) {
 
-
         String[] str1 = str.split(" ");
 
-        int answer = str1[str1.length-1].length();
+        int answer = str1[str1.length - 1].length();
 
         return answer;
     }

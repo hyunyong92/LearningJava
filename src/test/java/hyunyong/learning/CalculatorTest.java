@@ -14,11 +14,6 @@ class CalculatorTest {
         assertEquals(result, 8);
     }
 
-
-
-
-
-
     @Test
     void minus() {
         Calculator calculator = new Calculator(3, 5);
