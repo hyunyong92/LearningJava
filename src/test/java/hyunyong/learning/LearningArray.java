@@ -39,10 +39,9 @@ class LearningArray {
         // 예를 들어 5, 9, 7, 10에서 5로 나누어 떨어지는 수는 5와 10 이므로 2를 리턴
         int count = 0;
         for(int i = 0; i < nums.length; i++) {
-            if(nums[i] %  5 == 0)
+            if(nums[i] %  divisor == 0)
                 count++;
         }
-
         return count;
     }
 }
