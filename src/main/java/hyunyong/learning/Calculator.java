@@ -11,12 +11,10 @@ public class Calculator {
     }
 
     public int add() {
-
         return operand1 + operand2;
     }
 
     public int minus() {
-
         return operand1 - operand2;
     }
 }
