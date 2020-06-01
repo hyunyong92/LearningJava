@@ -60,7 +60,12 @@ class LearningArray {
         // 예를 들어 {"Hello", "World", "Sky", "T1", "Faker", "Teddy", "Doinb"} 에서 "Faker"는 4번째 인덱스에 위치하므로 4를 리턴
         // 단 배열에 존재하지 않는 word가 파라매터로 넘어오는 경우 -1을 리턴
         // 예를 들어 {"Hello", "World", "Sky", "T1", "Faker", "Teddy", "Doinb"} 에서 "Effort"는 존재하지 않으므로 -1를 리턴
-        return 0;
+        for(int i = 0; i < words.length; i++) {
+            if (words[i].equals(word))
+                return i;
+        }
+
+        return -1;
     }
 
 
