@@ -3,7 +3,7 @@ package hyunyong.learning;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class PrimeTest {
+class PrimeTest {
 
     @Test
     void testPrime() {
@@ -16,7 +16,17 @@ public class PrimeTest {
         Assertions.assertTrue(isPrime(7));
         Assertions.assertFalse(isPrime(8));
         Assertions.assertFalse(isPrime(9));
+    }
 
+    @Test
+    void testCountPrime() {
+        Assertions.assertEquals(countPrime(10), 4);
+    }
+
+    private int countPrime(int input) {
+        // input 보다 작은수중에 소수의 개수를 구해라
+        // 예를 들어 input이 10이면 10보다 작은 소수는 2, 3, 5, 7 이므로 4를 리턴
+        return 0;
     }
 
     private boolean isPrime(int num) {
