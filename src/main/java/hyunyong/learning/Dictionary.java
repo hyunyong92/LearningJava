@@ -9,11 +9,16 @@ public class Dictionary {
 
     public int find(String word) {
         // TODO: implementation
-        return 0;
+        for (int i = 0; i < words.length; i++) {
+            if (words[i].equals(word))
+                return i;
+        }
+        return -1;
+
     }
 
     public String get(int index) {
         // TODO: implementation
-        return "";
+    return words[index];
     }
 }
