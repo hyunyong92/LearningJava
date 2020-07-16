@@ -82,6 +82,10 @@ class LearningArray {
     }
 
     private int[] subArray(int[] integers, int startIndex, int endIndex) {
-        return null;
+        int[] results = new int[endIndex - startIndex + 1];
+        for(int i = startIndex; i <= endIndex; i++) {
+            results[i-startIndex] = integers[i];
+        }
+        return results;
     }
 }
