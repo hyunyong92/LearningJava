@@ -196,7 +196,7 @@ public class LearningString {
     }
 
     private char middleCharacter(String str) {
-        if(str.length() % 2 == 0) {
+        if (str.length() % 2 == 0) {
             return str.charAt(str.length() / 2 - 1);
         } else {
             return str.charAt(str.length() / 2);
