@@ -68,5 +68,20 @@ class LearningArray {
         return -1;
     }
 
+    @Test
+    void testSubArray() {
+        int[] integers = {1, 2, 3, 4, 5, 6};
 
+        int[] subIntegers = subArray(integers, 2, 5);
+
+        Assertions.assertEquals(subIntegers.length, 4);
+        Assertions.assertEquals(subIntegers[0], 3);
+        Assertions.assertEquals(subIntegers[1], 4);
+        Assertions.assertEquals(subIntegers[2], 5);
+        Assertions.assertEquals(subIntegers[3], 6);
+    }
+
+    private int[] subArray(int[] integers, int startIndex, int endIndex) {
+        return null;
+    }
 }
