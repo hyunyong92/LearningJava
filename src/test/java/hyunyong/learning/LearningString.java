@@ -188,4 +188,14 @@ public class LearningString {
 
         return answer;
     }
+
+    @Test
+    void testMiddleCharacter() {
+        Assertions.assertEquals(middleCharacter("abcde"), 'c');
+        Assertions.assertEquals(middleCharacter("abcd"), 'b');
+    }
+
+    private char middleCharacter(String str) {
+        return 0;
+    }
 }
