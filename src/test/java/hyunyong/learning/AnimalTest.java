@@ -7,12 +7,12 @@ class AnimalTest {
 
     @Test
     void testName() {
-        Animal animal = new Monkey();
-        Assertions.assertEquals(animal.name(), "Monkey");
-        Assertions.assertEquals(animal.footCount(),2);
-        animal = new Cat();
-        Assertions.assertEquals(animal.name(),"Cat");
-        Assertions.assertEquals(animal.footCount(),4);
+        Animal monkey = new Monkey();
+        Assertions.assertEquals(monkey.name(), "Monkey");
+        Assertions.assertEquals(monkey.footCount(),2);
+        Animal cat = new Cat();
+        Assertions.assertEquals(cat.name(),"Cat");
+        Assertions.assertEquals(cat.footCount(),4);
     }
 
     public static class Cat extends Animal {
