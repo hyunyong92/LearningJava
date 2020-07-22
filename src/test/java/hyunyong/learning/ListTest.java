@@ -14,15 +14,15 @@ public class ListTest {
         strings.add("gunju");
         strings.add("hyunyong");
 
-        for (int i = 0; i < strings.size(); i++) {
-            System.out.println(strings.get(i));
+        for (String string : strings) {
+            System.out.println(string);
         }
 
         Assertions.assertEquals(strings.get(0), "gunju");
         Assertions.assertEquals(strings.get(1), "hyunyong");
         strings.remove(0);
-        for (int i = 0; i < strings.size(); i++) {
-            System.out.println(strings.get(i));
+        for (String string : strings) {
+            System.out.println(string);
         }
     }
 
